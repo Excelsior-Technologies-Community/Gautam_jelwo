@@ -35,7 +35,7 @@ function updateCart() {
             <div class="empty-cart">
                 <i class="fa-solid fa-bag-shopping"></i>
                 <p>Your cart is empty</p>
-                
+                  <a href="collection.html" class="shop-btn">CONTINUE SHOPPING</a>
             </div>
         `;
         return;

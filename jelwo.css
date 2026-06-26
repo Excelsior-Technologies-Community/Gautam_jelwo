@@ -1,8 +1,12 @@
 .header-area {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 55px;
     padding: 15px 0;
+}
+
+.header-area img {
+    width: 200px;
 }
 
 span.offer1 {
@@ -109,7 +113,7 @@ nav li {
 
 ul {
     display: flex;
-    padding: 24px 190px;
+    padding: 0 190px;
     font-weight: 600;
     list-style: none;
     gap: 50px;

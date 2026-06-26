@@ -35,7 +35,7 @@ function renderWishlist() {
     if (!wishlistItems) return;
 
     if (wishlist.length === 0) {
-        wishlistItems.innerHTML = "<h2>Wishlist is empty <u>return to store</u></h2>";
+        wishlistItems.innerHTML = "<h2>Wishlist is empty <a href='collection.html'><u>return to store</u></a></h2>";
         return;
     }
 
