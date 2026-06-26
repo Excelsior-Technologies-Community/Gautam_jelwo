@@ -1,0 +1,1662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelwo</title>
+    <link rel="stylesheet" href="jelwo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+</head>
+
+
+<body>
+
+    <header>
+        <div class="header-area">
+            <div>
+                <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-logo.png?v=1744805986&width=352" alt="">
+            </div>
+            <span class="offer1">
+                <p>Free UK standard delivery on all orders.</p>
+            </span>
+
+            <div class="search-box">
+                <input type="search" placeholder="Search products...">
+                <button type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="icon-wrapper">
+                <a href="#" class="icon-item">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+
+                <a href="wishlist.html" class="icon-item">
+                    <i class="fa-regular fa-heart"></i>
+                    <span id="wishlistCount">(0)</span>
+                </a>
+
+                <a href="#" class="icon-item" onclick="openCart(); return false;">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="cartCount">(0)</span>
+                </a>
+
+                <div id="cartOverlay" class="cart-overlay"></div>
+
+                <div id="cartDrawer" class="cart-drawer">
+                    <div class="cart-header">
+                        <h2>My Shopping Cart</h2>
+                        <span class="close-btn" onclick="closeCart()">
+                            <i class="fa-solid fa-xmark"></i>
+                        </span>
+                    </div>
+
+                    <div class="cart-body" id="cartItems">
+                        <div class="empty-cart">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <p>Your cart is empty</p>
+                        </div>
+                    </div>
+
+                    <div class="cart-footer">
+                        <div class="subtotal">
+                            <span>Subtotal:</span>
+                            <strong id="subtotal">₹0.00</strong>
+                        </div>
+                        <button class="checkout-btn">Checkout</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="head2">
+        <div class="num">
+            <i class="fa-solid fa-headset"></i>
+            <p>(220) 123 456 7890</p>
+        </div>
+        <nav class="manu">
+            <ul>
+                <li class="dropdown">
+                    <a href="#">HOME</a>
+                </li>
+                <li class="dropdown">
+                    <a href="collection.html">SHOP</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#">PRODUCT</a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Home One </a></li>
+                        <li><a href="#">Home Two</a></li>
+                        <li><a href="#">Homw Three</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">BLOG</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#">PAGES</a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#">About us </a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Faq's</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Refund policy</a></li>
+                        <li><a href="#">Store location</a></li>
+                        <li><a href="#">Shipping & return</a></li>
+                        <li><a href="#">Terms & condition</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div style="display: contents;">
+            <i class="fa-solid fa-house"></i>
+            <p>FREE TRY AT HOME</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img
+                        src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-slider-1.jpg?v=1742540741&width=1920"
+                        alt="" class="main-img">
+                    <div class="slide-content">
+                        <img class="center-logo"
+                            src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-slider-label.png?v=1742534520&width=352"
+                            alt="">
+
+                        <h1>Jewelry is our passion</h1>
+
+                        <a href="#" class="shop-btn">SHOP NOW</a>
+                    </div>
+                </div>
+                <div class="swiper-slide"><img
+                        src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-slider-2.jpg?v=1742541168&width=1200"
+                        alt="" class="main-img">
+                    <div class="slide-content">
+                        <img class="center-logo"
+                            src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-slider-label.png?v=1742534520&width=352"
+                            alt="">
+
+                        <h1>Jewelry made with love</h1>
+
+                        <a href="#" class="shop-btn">SHOP NOW</a>
+                    </div>
+                </div>
+                <div class="swiper-slide"><img
+                        src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-slider-3.jpg?v=1742541168&width=1920"
+                        alt="" class="main-img">
+                    <div class="slide-content">
+                        <img class="center-logo"
+                            src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-slider-label.png?v=1742534520&width=352"
+                            alt="">
+
+                        <h1>Elegance is our obsession</h1>
+
+                        <a href="#" class="shop-btn">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="main-offer">
+            <span class="main-t"> Diamonds for every excuse 1500+ designs under</span>
+        </div>
+    </section>
+
+    <section>
+        <ul class="banner">
+            <li>
+                <div class="ban-cls">
+                    <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-banner-1.jpg?v=1742541671&width=832"
+                        alt="" class="ban1">
+                    <div class="banner-txt1">
+                        <span>Get a 30% discount</span>
+                        <h2>Exquisite collection</h2>
+                        <a href="#" class="shop-btn">SHOP NOW</a>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="ban-cls">
+                    <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-banner-2.jpg?v=1742541712&width=832"
+                        alt="" class="ban2">
+                    <div class="banner-txt2">
+                        <span>20% off on wastage</span>
+                        <h2>Diamond necklace</h2>
+                        <a href="#" class="shop-btn">SHOP NOW</a>
+                    </div>
+                </div>
+            </li>
+    </section>
+
+    <section class="collection-list">
+        <div class="section-title">
+            <h2>Popular category</h2>
+        </div>
+        <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide"><img
+                        src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-cate-1.jpg?v=1742619384&width=860"
+                        alt="">
+                    <div class="category-content">
+                        <span>12 + ITEMS</span>
+                        <h2>Rings</h2>
+                        <a href="#">SHOP NOW</a>
+                    </div>
+                </div>
+                <div class="swiper-slide"><img
+                        src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-cate-2.jpg?v=1742619383&width=860"
+                        alt="">
+                    <div class="category-content">
+                        <span>10 + ITEMS</span>
+                        <h2>Earrings</h2>
+                        <a href="#">SHOP NOW</a>
+                    </div>
+                </div>
+                <div class="swiper-slide"><img
+                        src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-cate-3.jpg?v=1742619384&width=860"
+                        alt="">
+                    <div class="category-content">
+                        <span>12 + ITEMS</span>
+                        <h2> Bracelete</h2>
+                        <a href="#">SHOP NOW</a>
+                    </div>
+                </div>
+                <div class="swiper-slide"><img
+                        src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-cate-4.jpg?v=1742620620&width=860"
+                        alt="">
+                    <div class="category-content">
+                        <span>12 + ITEMS</span>
+                        <h2>Nacklace</h2>
+                        <a href="#">SHOP NOW</a>
+                    </div>
+                </div>
+                <div class="swiper-slide"><img
+                        src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-cate-5.jpg?v=1742621906&width=860"
+                        alt="">
+                    <div class="category-content">
+                        <span>12 + ITEMS</span>
+                        <h2>Pendants</h2>
+                        <a href="#">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-area">
+        <ul>
+            <li>
+                <div class="ser-block">
+                    <a href>
+                        <span class="icon">
+                            <i class="fa-solid fa-truck"></i>
+                        </span>
+                        <div class="ser-text">
+                            <h6>Free shipping</h6>
+                            <p>Free shipping all order</p>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="ser-block">
+                    <a href>
+                        <span class="icon">
+                            <i class="fa-solid fa-headset"></i>
+                        </span>
+                        <div class="ser-text">
+                            <h6>Qualiy support</h6>
+                            <p>Contact us anytime</p>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="ser-block">
+                    <a href>
+                        <span class="icon">
+                            <i class="fa-solid fa-money-bill-transfer"></i>
+                        </span>
+                        <div class="ser-text">
+                            <h6>Money return</h6>
+                            <p>30 days for free return</p>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="ser-block">
+                    <a href>
+                        <span class="icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </span>
+                        <div class="ser-text">
+                            <h6>Secured payment</h6>
+                            <p>Payment cards accepted</p>
+                        </div>
+                    </a>
+                </div>
+            </li>
+        </ul>
+
+    </section>
+
+    <section class="collection-sec">
+        <div class="section-title">
+            <h2>New Jewelrys</h2>
+        </div>
+
+        <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <span class="discount">25%</span>
+
+                        <div class="product-image">
+                            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-6.jpg?v=1742442751&width=352"
+                                alt="">
+                        </div>
+
+                        <div class="countdown">
+                            <div><span>1534</span><small>DAY</small></div>
+                            <div><span>09</span><small>HRS</small></div>
+                            <div><span>21</span><small>MIN</small></div>
+                            <div><span>43</span><small>SEC</small></div>
+                        </div>
+
+                        <div class="product-info">
+                            <span class="category">JEWELRY</span>
+                            <h3>Simple Pearl Earrings</h3>
+                            <p class="price">
+                                Rs. 15.00
+                                <del>Rs. 20.00</del>
+                            </p>
+                            <a href="#"
+                                onclick="addToWishlist('Simple Pearl Earrings',15,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-6.jpg?v=1742442751&width=352'); return false;">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#"
+                                onclick="addToCart('Simple Pearl Earrings',15,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-6.jpg?v=1742442751&width=352'); return false;">
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <span class="discount">45%</span>
+
+                        <div class="product-image">
+                            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-56.jpg?v=1742445682&width=352"
+                                alt="">
+                        </div>
+
+                        <div class="countdown">
+                            <div><span>1534</span><small>DAY</small></div>
+                            <div><span>09</span><small>HRS</small></div>
+                            <div><span>21</span><small>MIN</small></div>
+                            <div><span>43</span><small>SEC</small></div>
+                        </div>
+
+                        <div class="product-info">
+                            <span class="category">JEWELRY</span>
+                            <h3>Chic Diamond Ring</h3>
+                            <p class="price">
+                                From Rs. 22.00
+                                <del>Rs. 40.00</del>
+                            </p>
+                            <a href="#"
+                                onclick="addToWishlist('Chic Diamond Ring',22,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-56.jpg?v=1742445682&width=352'); return false;">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#"
+                                onclick="addToCart('Chic Diamond Ring',22,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-56.jpg?v=1742445682&width=352'); return false;">
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <span class="discount">64%</span>
+
+                        <div class="product-image">
+                            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-51.jpg?v=1742445540&width=352"
+                                alt="">
+                        </div>
+
+                        <div class="countdown">
+                            <div><span>1534</span><small>DAY</small></div>
+                            <div><span>09</span><small>HRS</small></div>
+                            <div><span>21</span><small>MIN</small></div>
+                            <div><span>43</span><small>SEC</small></div>
+                        </div>
+
+                        <div class="product-info">
+                            <span class="category">JEWELRY</span>
+                            <h3>Gemstone Jhumkas</h3>
+                            <p class="price">
+                                Rs. 18.00
+                                <del>Rs. 50.00</del>
+                            </p>
+                            <a href="#"
+                                onclick="addToWishlist('Gemstone Jhumkas',18,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-51.jpg?v=1742445540&width=352'); return false;">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#"
+                                onclick="addToCart('Gemstone Jhumkas',18,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-51.jpg?v=1742445540&width=352'); return false;">
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <span class="discount">68%</span>
+
+                        <div class="product-image">
+                            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-46.jpg?v=1742445430&width=352"
+                                alt="">
+                        </div>
+
+                        <div class="countdown">
+                            <div><span>1534</span><small>DAY</small></div>
+                            <div><span>09</span><small>HRS</small></div>
+                            <div><span>21</span><small>MIN</small></div>
+                            <div><span>43</span><small>SEC</small></div>
+                        </div>
+
+                        <div class="product-info">
+                            <span class="category">JEWELRY</span>
+                            <h3>Drop Gold Earrings</h3>
+                            <p class="price">
+                                From Rs. 14.00
+                                <del>Rs. 44.00</del>
+                            </p>
+                            <a href="#"
+                                onclick="addToWishlist('Drop Gold Earrings',14,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-46.jpg?v=1742445430&width=352'); return false;">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#"
+                                onclick="addToCart('Drop Gold Earrings',14,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-46.jpg?v=1742445430&width=352'); return false;">
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <span class="discount">56%</span>
+
+                        <div class="product-image">
+                            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-41.jpg?v=1742444936&width=352"
+                                alt="">
+                        </div>
+
+                        <div class="countdown">
+                            <div><span>1534</span><small>DAY</small></div>
+                            <div><span>09</span><small>HRS</small></div>
+                            <div><span>21</span><small>MIN</small></div>
+                            <div><span>43</span><small>SEC</small></div>
+                        </div>
+
+                        <div class="product-info">
+                            <span class="category">JEWELRY</span>
+                            <h3>Gemstone chain bracelet</h3>
+                            <p class="price">
+                                From Rs. 17.00
+                                <del>Rs. 39.00</del>
+                            </p>
+                            <a href="#"
+                                onclick="addToWishlist('Gemstone chain bracelet',17,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-41.jpg?v=1742444936&width=352'); return false;">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#"
+                                onclick="addToCart('Gemstone chain bracelet',17,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-41.jpg?v=1742444936&width=352'); return false;">
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product-card">
+
+                        <div class="product-image">
+                            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-36.jpg?v=1742444776&width=352"
+                                alt="">
+                        </div>
+
+                        <div class="countdown">
+                            <div><span>1534</span><small>DAY</small></div>
+                            <div><span>09</span><small>HRS</small></div>
+                            <div><span>21</span><small>MIN</small></div>
+                            <div><span>43</span><small>SEC</small></div>
+                        </div>
+
+                        <div class="product-info">
+                            <span class="category">JEWELRY</span>
+                            <h3>Cluster diamond ring</h3>
+                            <p class="price">
+                                From Rs. 12.00
+                            </p>
+                            <a href="#"
+                                onclick="addToWishlist('Cluster diamond ring',12,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-36.jpg?v=1742444776&width=352'); return false;">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#"
+                                onclick="addToCart('Cluster diamond ring',12,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-36.jpg?v=1742444776&width=352'); return false;">
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product-card">
+
+                        <div class="product-image">
+                            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-31.jpg?v=1742444512&width=352"
+                                alt="">
+                        </div>
+
+                        <div class="countdown">
+                            <div><span>1534</span><small>DAY</small></div>
+                            <div><span>09</span><small>HRS</small></div>
+                            <div><span>21</span><small>MIN</small></div>
+                            <div><span>43</span><small>SEC</small></div>
+                        </div>
+
+                        <div class="product-info">
+                            <span class="category">JEWELRY</span>
+                            <h3>Flora diamond bangle</h3>
+                            <p class="price">
+                                From Rs. 28.00
+                            </p>
+                            <a href="#"
+                                onclick="addToWishlist('Flora diamond bangle',28,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-31.jpg?v=1742444512&width=352'); return false;">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#"
+                                onclick="addToCart('Flora diamond bangle',28,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-31.jpg?v=1742444512&width=352'); return false;">
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product-card">
+
+                        <div class="product-image">
+                            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-26.jpg?v=1742444221&width=352"
+                                alt="">
+                        </div>
+
+                        <div class="countdown">
+                            <div><span>1534</span><small>DAY</small></div>
+                            <div><span>09</span><small>HRS</small></div>
+                            <div><span>21</span><small>MIN</small></div>
+                            <div><span>43</span><small>SEC</small></div>
+                        </div>
+
+                        <div class="product-info">
+                            <span class="category">JEWELRY</span>
+                            <h3>Glitter diamond ring</h3>
+                            <p class="price">
+                                From Rs. 10.00
+                            </p>
+                            <a href="#"
+                                onclick="addToWishlist('Glitter diamond ring',10,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-26.jpg?v=1742444221&width=352'); return false;">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#"
+                                onclick="addToCart('Glitter diamond ring',10,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-26.jpg?v=1742444221&width=352'); return false;">
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <span class="discount">13%</span>
+                        <div class="product-image">
+                            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-1.jpg?v=1742443985&width=352"
+                                alt="">
+                        </div>
+
+                        <div class="countdown">
+                            <div><span>1534</span><small>DAY</small></div>
+                            <div><span>09</span><small>HRS</small></div>
+                            <div><span>21</span><small>MIN</small></div>
+                            <div><span>43</span><small>SEC</small></div>
+                        </div>
+
+                        <div class="product-info">
+                            <span class="category">JEWELRY</span>
+                            <h3>Cluster diamond ring</h3>
+                            <p class="price">
+                                Rs. 26.00
+                                <del>Rs. 30.00</del>
+                            </p>
+                            <a href="#"
+                                onclick="addToWishlist('Cluster diamond ring',26,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-1.jpg?v=1742443985&width=352'); return false;">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#"
+                                onclick="addToCart('Cluster diamond ring',26,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-1.jpg?v=1742443985&width=352'); return false;">
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product-card">
+
+                        <div class="product-image">
+                            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-21.jpg?v=1742443763&width=352"
+                                alt="">
+                        </div>
+
+                        <div class="countdown">
+                            <div><span>1534</span><small>DAY</small></div>
+                            <div><span>09</span><small>HRS</small></div>
+                            <div><span>21</span><small>MIN</small></div>
+                            <div><span>43</span><small>SEC</small></div>
+                        </div>
+
+                        <div class="product-info">
+                            <span class="category">JEWELRY</span>
+                            <h3>Gold nose pin</h3>
+                            <p class="price">
+                                Rs. 12.00
+                            </p>
+                            <a href="#"
+                                onclick="addToWishlist('Gold nose pin',12,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-21.jpg?v=1742443763&width=352'); return false;">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#"
+                                onclick="addToCart('Gold nose pin',12,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-21.jpg?v=1742443763&width=352'); return false;">
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <span class="discount">20%</span>
+                        <div class="product-image">
+                            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-16.jpg?v=1742443575&width=352"
+                                alt="">
+                        </div>
+
+                        <div class="countdown">
+                            <div><span>1534</span><small>DAY</small></div>
+                            <div><span>09</span><small>HRS</small></div>
+                            <div><span>21</span><small>MIN</small></div>
+                            <div><span>43</span><small>SEC</small></div>
+                        </div>
+
+                        <div class="product-info">
+                            <span class="category">JEWELRY</span>
+                            <h3>Blossom diamond bangle</h3>
+                            <p class="price">
+                                Rs. 28.00
+                                <del>Rs. 35.00</del>
+                            </p>
+                            <a href="#"
+                                onclick="addToWishlist('Blossom diamond bangle',28,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-16.jpg?v=1742443575&width=352'); return false;">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+
+                            <a href="#"
+                                onclick="addToCart('Blossom diamond bangle',28,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-16.jpg?v=1742443575&width=352'); return false;">
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="product-card">
+
+                        <div class="product-image">
+                            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-11.jpg?v=1742443330&width=352"
+                                alt="">
+                        </div>
+
+                        <div class="countdown">
+                            <div><span>1534</span><small>DAY</small></div>
+                            <div><span>09</span><small>HRS</small></div>
+                            <div><span>21</span><small>MIN</small></div>
+                            <div><span>43</span><small>SEC</small></div>
+                        </div>
+
+                        <div class="product-info">
+                            <span class="category">JEWELRY</span>
+                            <h3>Framed gold pendant</h3>
+                            <p class="price">
+                                Rs. 22.00
+                            </p>
+                            <a href="#"
+                                onclick="addToWishlist('Framed gold pendant',22,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-11.jpg?v=1742443330&width=352'); return false;">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#"
+                                onclick="addToCart('Framed gold pendant',22,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-11.jpg?v=1742443330&width=352'); return false;">
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="btn-wrap">
+            <a href="collection.html" class="collection-btn">VIEW COLLECTION</a>
+        </div>
+    </section>
+
+    <section class="video-sec">
+        <div class="video-img1">
+            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-banner-3.jpg?v=1742624026&width=920" alt="">
+            <div class="img1-txt">
+                <h2>Unleash your inner shine</h2>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout.</p>
+                <a href="#" class="shop-btn">SHOP NOW</a>
+
+            </div>
+        </div>
+        <div class="video-img2">
+            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-video-banner.jpg?v=1742625158&width=832"
+                alt="">
+            <div class="video-btn">
+                <a href="https://cdn.shopify.com/videos/c/o/v/747375f4ce1e4946941f966c90baabbb.mp4">
+                    <span>
+                        <i class="fa-solid fa-play"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="collection-sec">
+        <div class="section-title">
+            <h2>Trending product</h2>
+        </div>
+
+        <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <span class="discount">25%</span>
+
+                        <div class="product-image">
+                            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-6.jpg?v=1742442751&width=352"
+                                alt="">
+                        </div>
+
+                        <div class="countdown">
+                            <div><span>1534</span><small>DAY</small></div>
+                            <div><span>09</span><small>HRS</small></div>
+                            <div><span>21</span><small>MIN</small></div>
+                            <div><span>43</span><small>SEC</small></div>
+                        </div>
+
+                        <div class="product-info">
+                            <span class="category">JEWELRY</span>
+                            <h3>Simple Pearl Earrings</h3>
+                            <p class="price">
+                                Rs. 15.00
+                                <del>Rs. 20.00</del>
+                            </p>
+                            <a href="#"
+                                onclick="addToWishlist('Simple Pearl Earrings',15,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-6.jpg?v=1742442751&width=352'); return false;">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#"
+                                onclick="addToCart('Simple Pearl Earrings',15,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-6.jpg?v=1742442751&width=352'); return false;">
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product-card">
+
+                        <div class="product-image">
+                            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-26.jpg?v=1742444221&width=352"
+                                alt="">
+                        </div>
+
+                        <div class="countdown">
+                            <div><span>1534</span><small>DAY</small></div>
+                            <div><span>09</span><small>HRS</small></div>
+                            <div><span>21</span><small>MIN</small></div>
+                            <div><span>43</span><small>SEC</small></div>
+                        </div>
+
+                        <div class="product-info">
+                            <span class="category">JEWELRY</span>
+                            <h3>Glitter diamond ring</h3>
+                            <p class="price">
+                                From Rs. 10.00
+                            </p>
+                            <a href="#"
+                                onclick="addToWishlist('Glitter diamond ring',10,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-26.jpg?v=1742444221&width=352'); return false;">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#"
+                                onclick="addToCart('Glitter diamond ring',10,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-26.jpg?v=1742444221&width=352'); return false;">
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product-card">
+
+                        <div class="product-image">
+                            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-21.jpg?v=1742443763&width=352"
+                                alt="">
+                        </div>
+
+                        <div class="countdown">
+                            <div><span>1534</span><small>DAY</small></div>
+                            <div><span>09</span><small>HRS</small></div>
+                            <div><span>21</span><small>MIN</small></div>
+                            <div><span>43</span><small>SEC</small></div>
+                        </div>
+
+                        <div class="product-info">
+                            <span class="category">JEWELRY</span>
+                            <h3>Gold nose pin</h3>
+                            <p class="price">
+                                Rs.12.00
+                            </p>
+                            <a href="#"
+                                onclick="addToWishlist('Gold nose pin',12,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-21.jpg?v=1742443763&width=352'); return false;">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#"
+                                onclick="addToCart('Gold nose pin',12,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-21.jpg?v=1742443763&width=352'); return false;">
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <span class="discount">64%</span>
+
+                        <div class="product-image">
+                            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-51.jpg?v=1742445540&width=352"
+                                alt="">
+                        </div>
+
+                        <div class="countdown">
+                            <div><span>1534</span><small>DAY</small></div>
+                            <div><span>09</span><small>HRS</small></div>
+                            <div><span>21</span><small>MIN</small></div>
+                            <div><span>43</span><small>SEC</small></div>
+                        </div>
+
+                        <div class="product-info">
+                            <span class="category">JEWELRY</span>
+                            <h3>Gemstone Jhumkas</h3>
+                            <p class="price">
+                                Rs. 18.00
+                                <del>Rs. 50.00</del>
+                            </p>
+                            <a href="#"
+                                onclick="addToWishlist('Gemstone Jhumkas',18,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-51.jpg?v=1742445540&width=352'); return false;">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#"
+                                onclick="addToCart('Gemstone Jhumkas',18,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-51.jpg?v=1742445540&width=352'); return false;">
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <span class="discount">56%</span>
+
+                        <div class="product-image">
+                            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-41.jpg?v=1742444936&width=352"
+                                alt="">
+                        </div>
+
+                        <div class="countdown">
+                            <div><span>1534</span><small>DAY</small></div>
+                            <div><span>09</span><small>HRS</small></div>
+                            <div><span>21</span><small>MIN</small></div>
+                            <div><span>43</span><small>SEC</small></div>
+                        </div>
+
+                        <div class="product-info">
+                            <span class="category">JEWELRY</span>
+                            <h3>Gemstone chain bracelet</h3>
+                            <p class="price">
+                                From Rs. 17.00
+                                <del>Rs. 39.00</del>
+                            </p>
+                            <a href="#"
+                                onclick="addToWishlist('Gemstone chain bracelet',17,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-41.jpg?v=1742444936&width=352'); return false;">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#"
+                                onclick="addToCart('Gemstone chain bracelet',17,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-41.jpg?v=1742444936&width=352'); return false;">
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="btn-wrap">
+            <a href="collection.html" class="collection-btn">VIEW COLLECTION</a>
+
+    </section>
+
+    <section>
+        </div>
+        <div class="border">
+        </div>
+    </section>
+
+    <section class="reviews">
+
+        <div class="section-title">
+            <h2>Happy customer</h2>
+        </div>
+
+        <div class="swiper mySwiper3">
+            <div class="swiper-wrapper">
+
+                <!-- review 1 -->
+                <div class="swiper-slide">
+                    <div class="review-txt">
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>( 4.0 Reviews )</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. ut enim ad minim veniam, quisnostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea consequat.</p>
+                    </div>
+                    <div class="img-content">
+                        <div class="rev-img">
+                            <span>
+                                <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-testi-1.jpg?v=1741598801&width=100"
+                                    alt="">
+                            </span>
+                            <div class="author">
+                                <h2>Crystal waston</h2>
+                                <span>Jewelry designer</span>
+                            </div>
+                        </div>
+                        <div class="double-qut">
+                            <span>
+                                <i class="fa-solid fa-quote-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- review 2 -->
+                <div class="swiper-slide">
+                    <div class="review-txt">
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>( 4.0 Reviews )</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. ut enim ad minim veniam, quisnostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea consequat.</p>
+                    </div>
+                    <div class="img-content">
+                        <div class="rev-img">
+                            <span>
+                                <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-testi-2.jpg?v=1741598801&width=100"
+                                    alt="">
+                            </span>
+                            <div class="author">
+                                <h2>Brittany jones</h2>
+                                <span>Jewelry designer</span>
+                            </div>
+                        </div>
+                        <div class="double-qut">
+                            <span>
+                                <i class="fa-solid fa-quote-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- review 3 -->
+                <div class="swiper-slide">
+                    <div class="review-txt">
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>( 4.0 Reviews )</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. ut enim ad minim veniam, quisnostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea consequat.</p>
+                    </div>
+                    <div class="img-content">
+                        <div class="rev-img">
+                            <span>
+                                <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-testi-3.jpg?v=1741598801&width=100"
+                                    alt="">
+                            </span>
+                            <div class="author">
+                                <h2>Kristen brown</h2>
+                                <span>Company ceo</span>
+                            </div>
+                        </div>
+                        <div class="double-qut">
+                            <span>
+                                <i class="fa-solid fa-quote-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- review 4 -->
+                <div class="swiper-slide">
+                    <div class="review-txt">
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>( 4.0 Reviews )</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. ut enim ad minim veniam, quisnostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea consequat.</p>
+                    </div>
+                    <div class="img-content">
+                        <div class="rev-img">
+                            <span>
+                                <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-testi-4.jpg?v=1741598801&width=100"
+                                    alt="">
+                            </span>
+                            <div class="author">
+                                <h2>Michal smith</h2>
+                                <span>Customer</span>
+                            </div>
+                        </div>
+                        <div class="double-qut">
+                            <span>
+                                <i class="fa-solid fa-quote-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="section-title">
+            <h2>Jewelry news</h2>
+        </div>
+
+        <div class="swiper mySwiper4">
+            <div class="swiper-wrapper">
+
+                <!-- news-1 -->
+                <div class="swiper-slide">
+                    <div class="news-img">
+                        <img src="https://jelwo.myshopify.com/cdn/shop/articles/jewelry-blog-8_1c3cdfa3-a7b1-4343-be06-30d5638e370b.jpg?v=1750223543&width=832"
+                            alt="">
+
+                        <span class="date-time">
+                            <span>10, MAR 2026</span>
+                            <span>By Andrew johns</span>
+                        </span>
+                        <div class="news-txt">
+                            <p>As part of our mission create space for women to express their sensuality without shame
+                                fear or the patriarchal gaze ...</p>
+                        </div>
+                        <div class="n-btn">
+                            <a href="#" class="news-btn">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- news-2 -->
+                <div class=" swiper-slide">
+                    <div class="news-img">
+                        <img src="https://jelwo.myshopify.com/cdn/shop/articles/jewelry-blog-1_66fd95ae-8368-4800-8123-8c69f48dff27.jpg?v=1750223539&width=832"
+                            alt="">
+                        <span class="date-time">
+                            <span>10, MAR 2026</span>
+                            <span>By Andrew johns</span>
+                        </span>
+                        <div class="news-txt">
+                            <p>As part of our mission create space for women to express their sensuality without
+                                shame
+                                fear or the patriarchal gaze ...</p>
+                        </div>
+                        <div class="n-btn">
+                            <a href="#" class="news-btn">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- news-3 -->
+                <div class="swiper-slide">
+                    <div class="news-img">
+                        <img src="https://jelwo.myshopify.com/cdn/shop/articles/jewelry-blog-2_f99fac11-0d22-4081-94bc-cd2ec791c782.jpg?v=1750223483&width=832"
+                            alt="">
+                        <span class="date-time">
+                            <span>10, MAR 2026</span>
+                            <span>By Andrew johns</span>
+                        </span>
+                        <div class="news-txt">
+                            <p>As part of our mission create space for women to express their sensuality without shame
+                                fear or the patriarchal gaze ...</p>
+                        </div>
+                        <div class="n-btn">
+                            <a href="#" class="news-btn">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- news-4 -->
+                <div class="swiper-slide">
+                    <div class="news-img">
+                        <img src="https://jelwo.myshopify.com/cdn/shop/articles/jewelry-blog-3_5c484272-7a2f-456b-9197-f56b9189f283.jpg?v=1750223534&width=832"
+                            alt="">
+                        <span class="date-time">
+                            <span>10, MAR 2026</span>
+                            <span>By Andrew johns</span>
+                        </span>
+                        <div class="news-txt">
+                            <p>As part of our mission create space for women to express their sensuality without shame
+                                fear or the patriarchal gaze ...</p>
+                        </div>
+                        <div class="n-btn">
+                            <a href="#" class="news-btn">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- news-5 -->
+                <div class="swiper-slide">
+                    <div class="news-img">
+                        <img src="https://jelwo.myshopify.com/cdn/shop/articles/jewelry-blog-4_353fee00-faa9-421d-99bb-f4fe9cb5c1a2.jpg?v=1750223529&width=832"
+                            alt="">
+                        <span class="date-time">
+                            <span>10, MAR 2026</span>
+                            <span>By Andrew johns</span>
+                        </span>
+                        <div class="news-txt">
+                            <p>As part of our mission create space for women to express their sensuality without shame
+                                fear or the patriarchal gaze ...</p>
+                        </div>
+                        <div class="n-btn">
+                            <a href="#" class="news-btn">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- news-6 -->
+                <div class="swiper-slide">
+                    <div class="news-img">
+                        <img src="https://jelwo.myshopify.com/cdn/shop/articles/jewelry-blog-5_3cf647c3-7ce1-4f2c-bcc8-8289878be83c.jpg?v=1750223524&width=832"
+                            alt="">
+                        <span class="date-time">
+                            <span>10, MAR 2026</span>
+                            <span>By Andrew johns</span>
+                        </span>
+                        <div class="news-txt">
+                            <p>As part of our mission create space for women to express their sensuality without shame
+                                fear or the patriarchal gaze ...</p>
+                        </div>
+                        <div class="n-btn">
+                            <a href="#" class="news-btn">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- news-7 -->
+                <div class="swiper-slide">
+                    <div class="news-img">
+                        <img src="https://jelwo.myshopify.com/cdn/shop/articles/jewelry-blog-6_1e2f3da7-57c0-499e-94ee-6047231ac720.jpg?v=1750223520&width=832"
+                            alt="">
+                        <span class="date-time">
+                            <span>10, MAR 2026</span>
+                            <span>By Andrew johns</span>
+                        </span>
+                        <div class="news-txt">
+                            <p>As part of our mission create space for women to express their sensuality without shame
+                                fear or the patriarchal gaze ...</p>
+                        </div>
+                        <div class="n-btn">
+                            <a href="#" class="news-btn">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- news-8 -->
+                <div class="swiper-slide">
+                    <div class="news-img">
+                        <img src="https://jelwo.myshopify.com/cdn/shop/articles/jewelry-blog-7_923918ed-d386-45c3-85c2-ff31e2c4cdc5.jpg?v=1750223516&width=832"
+                            alt="">
+                        <span class="date-time">
+                            <span>10, MAR 2026</span>
+                            <span>By Andrew johns</span>
+                        </span>
+                        <div class="news-txt">
+                            <p>As part of our mission create space for women to express their sensuality without shame
+                                fear or the patriarchal gaze ...</p>
+                        </div>
+                        <div class="n-btn">
+                            <a href="#" class="news-btn">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        </div>
+        <div class="border">
+        </div>
+    </section>
+
+    <section class="reel-sec">
+        <div class="section-title">
+            <h2>Watch & shop reels</h2>
+        </div>
+
+        <div class="swiper mySwiper5">
+            <div class="swiper-wrapper">
+
+                <!-- reel-1 -->
+                <div class="swiper-slide">
+                    <div class="reel-video">
+                        <video playsinline="true" autoplay="autoplay" loop="loop">
+                            <source
+                                src="https://jelwo.myshopify.com/cdn/shop/videos/c/vp/accac3e666ff4e5c9314443e6438ea3a/accac3e666ff4e5c9314443e6438ea3a.HD-1080p-4.8Mbps-44581059.mp4?v=0"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="reel-product">
+                        <div class="reel-content">
+                            <div class="product-img">
+                                <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-56.jpg?v=1742445682&width=533"
+                                    alt="">
+                            </div>
+                            <div class="reel-txt">
+                                <h2>Chic diamond ring</h2>
+                                <span>Rs.22.00</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a href="#" class="reel-btn"
+                        onclick="addToCart('Chic diamond ring',22,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-56.jpg?v=1742445682&width=533'); return false;">
+                        Add To Cart
+                    </a>
+                </div>
+
+                <!-- reel-2 -->
+                <div class="swiper-slide">
+                    <div class="reel-video">
+                        <video playsinline="true" autoplay="autoplay" loop="loop">
+                            <source
+                                src="https://jelwo.myshopify.com/cdn/shop/videos/c/vp/72e5b0f02511443c8a62a81b9024ddb9/72e5b0f02511443c8a62a81b9024ddb9.HD-1080p-3.3Mbps-44622574.mp4?v=0"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="reel-product">
+                        <div class="reel-content">
+                            <div class="product-img">
+                                <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-pro-51.jpg?v=1741668863&width=533"
+                                    alt="">
+                            </div>
+                            <div class="reel-txt">
+                                <h2>Flower jhumka</h2>
+                                <span>Rs. 18.00</span>
+                            </div>
+                        </div>
+                        <a href="#" class="reel-btn"
+                            onclick="addToCart('Flower jhumka',18,'//jelwo.myshopify.com/cdn/shop/files/jewelry-pro-51.jpg?v=1741668863&width=533'); return false;">
+                            Add To Cart
+                        </a>
+                    </div>
+                </div>
+
+                <!-- reel-3 -->
+                <div class="swiper-slide">
+                    <div class="reel-video">
+                        <video playsinline="true" autoplay="autoplay" loop="loop">
+                            <source
+                                src="https://jelwo.myshopify.com/cdn/shop/videos/c/vp/7826750f43d941b28a3d57b2fd330864/7826750f43d941b28a3d57b2fd330864.HD-1080p-2.5Mbps-44713680.mp4?v=0"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="reel-product">
+                        <div class="reel-content">
+                            <div class="product-img">
+                                <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-pro-1.jpg?v=1741601512&width=533"
+                                    alt="">
+                            </div>
+                            <div class="reel-txt">
+                                <h2>Sherbi ring</h2>
+                                <span>Rs. 26.00</span>
+                            </div>
+                        </div>
+                        <a href="#" class="reel-btn"
+                            onclick="addToCart('Sherbi ring',26,'//jelwo.myshopify.com/cdn/shop/files/jewelry-pro-1.jpg?v=1741601512&width=533'); return false;">
+                            Add To Cart
+                        </a>
+                    </div>
+                </div>
+
+                <!-- reel-4-->
+                <div class="swiper-slide">
+                    <div class="reel-video">
+                        <video playsinline="true" autoplay="autoplay" loop="loop">
+                            <source
+                                src="https://jelwo.myshopify.com/cdn/shop/videos/c/vp/916ce2bac08d4c5c94bf6e154631eb8b/916ce2bac08d4c5c94bf6e154631eb8b.HD-1080p-7.2Mbps-44713017.mp4?v=0"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="reel-product">
+                        <div class="reel-content">
+                            <div class="product-img">
+                                <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-46.jpg?v=1742445430&width=533"
+                                    alt="">
+                            </div>
+                            <div class="reel-txt">
+                                <h2>Drop gold earrings</h2>
+                                <span>Rs. 14.00</span>
+                            </div>
+                        </div>
+                        <a href="#" class="reel-btn"
+                            onclick="addToCart('Drop gold earrings',14,'//jelwo.myshopify.com/cdn/shop/files/jewelry-product-46.jpg?v=1742445430&width=533'); return false;">
+                            Add To Cart
+                        </a>
+                    </div>
+                </div>
+
+                <!-- reel-5-->
+                <div class="swiper-slide">
+                    <div class="reel-video">
+                        <video playsinline="true" autoplay="autoplay" loop="loop">
+                            <source
+                                src="https://jelwo.myshopify.com/cdn/shop/videos/c/vp/d030285c343f4cbbbf4851801cf773e8/d030285c343f4cbbbf4851801cf773e8.HD-1080p-7.2Mbps-44713018.mp4?v=0"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="reel-product">
+                        <div class="reel-content">
+                            <div class="product-img">
+                                <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-pro-11.jpg?v=1741605562"
+                                    alt="">
+                            </div>
+                            <div class="reel-txt">
+                                <h2>Flower pendant</h2>
+                                <span>Rs.22.00</span>
+                            </div>
+                        </div>
+                        <a href="#" class="reel-btn"
+                            onclick="addToCart('Flower pendant',22,'//jelwo.myshopify.com/cdn/shop/files/jewelry-pro-11.jpg?v=1741605562'); return false;">
+                            Add To Cart
+                        </a>
+                    </div>
+                </div>
+
+                <!-- reel-6 -->
+                <div class="swiper-slide">
+                    <div class="reel-video">
+                        <video playsinline="true" autoplay="autoplay" loop="loop">
+                            <source
+                                src="https://jelwo.myshopify.com/cdn/shop/videos/c/vp/ba3a4b4a570f4749a2bf30fd1aa1b96d/ba3a4b4a570f4749a2bf30fd1aa1b96d.HD-1080p-4.8Mbps-44622575.mp4?v=0"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="reel-product">
+                        <div class="reel-content">
+                            <div class="product-img">
+                                <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-pro-1.jpg?v=1741601512&width=533"
+                                    alt="">
+                            </div>
+                            <div class="reel-txt">
+                                <h2>Sherbi ring</h2>
+                                <span>Rs.26.00</span>
+                            </div>
+                        </div>
+                        <a href="#" class="reel-btn"
+                            onclick="addToCart('Sherbi ring',26,'//jelwo.myshopify.com/cdn/shop/files/jewelry-pro-1.jpg?v=1741601512&width=533'); return false;">
+                            Add To Cart
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-top">
+
+            <div class="footer-col contact-info">
+                <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-logo.png?v=1744805986&width=352" alt=""
+                    class="logo">
+
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>55 East 10th street, new york, ny 10003, united states</p>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+ (220) 123 456 7890</p>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p>demo123546@gmail.com</p>
+                </div>
+            </div>
+
+            <!-- Information -->
+            <div class="footer-col">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Faq's</a></li>
+                    <li><a href="#">News</a></li>
+                </ul>
+            </div>
+
+            <!-- Privacy -->
+            <div class="footer-col">
+                <h3>Privacy & terms</h3>
+                <ul>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Refund policy</a></li>
+                    <li><a href="#">Shipping & return</a></li>
+                    <li><a href="#">Terms & condition</a></li>
+                </ul>
+            </div>
+
+            <!-- Category -->
+            <div class="footer-col">
+                <h3>Category</h3>
+                <ul>
+                    <li><a href="#">Rings</a></li>
+                    <li><a href="#">Earring</a></li>
+                    <li><a href="#">Pendant</a></li>
+                    <li><a href="#">Necklaces</a></li>
+                    <li><a href="#">Bracelets</a></li>
+                </ul>
+            </div>
+
+            <!-- Store -->
+            <div class="footer-col">
+                <h3>Visit store</h3>
+                <ul>
+                    <li>Mon - sat : 10am - 11pm</li>
+                    <li>Sun : 10am - 4pm</li>
+                    <li>7 Days a week</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Social Icons -->
+        <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <div class="newsletter">
+            <h3>Subscribe and get 15% discount.</h3>
+
+            <form>
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+        </div>
+
+
+    </footer>
+
+    <section>
+        <div class="footer-bottam">
+            <p>
+                Copyright © 2026 by spacingtech
+            </p>
+            <div class="payment-methods">
+                <div class="payment-box"><i class="fa-brands fa-cc-visa"></i></div>
+                <div class="payment-box"><i class="fa-brands fa-cc-mastercard"></i></div>
+                <div class="payment-box"><i class="fa-brands fa-cc-amex"></i></div>
+                <div class="payment-box"><i class="fa-brands fa-cc-paypal"></i></div>
+                <div class="payment-box"><i class="fa-brands fa-cc-diners-club"></i></div>
+                <div class="payment-box"><i class="fa-brands fa-cc-discover"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="jelwo.js"></script>
+    <script src="wishlist.js"></script>
+
+</body>
+
+</html>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+
+<script>
+    var swiper = new Swiper(".mySwiper1", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+</script>
+
+<script>
+    var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        freeMode: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+</script>
+
+<script>
+    var swiper = new Swiper(".mySwiper3", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        freeMode: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+</script>
+
+<script>
+    var swiper = new Swiper(".mySwiper4", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+</script>
+
+<script>
+    var swiper = new Swiper(".mySwiper5", {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        freeMode: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+</script>

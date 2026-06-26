@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelwo</title>
+    <link rel="stylesheet" href="jelwo.css">
+    <link rel="stylesheet" href="collection.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-area">
+            <div>
+                <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-logo.png?v=1744805986&width=352" alt="">
+            </div>
+            <span class="offer1">
+                <p>Free UK standard delivery on all orders.</p>
+            </span>
+
+            <div class="search-box">
+                <input type="search" placeholder="Search products...">
+                <button type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="icon-wrapper">
+                <a href="#" class="icon-item">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+
+                <a href="wishlist.html" class="icon-item">
+                    <i class="fa-regular fa-heart"></i>
+                    <span id="wishlistCount">(0)</span>
+                </a>
+
+                <a href="#" class="icon-item" onclick="openCart(); return false;">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="cartCount">(0)</span>
+                </a>
+
+                <div id="cartOverlay" class="cart-overlay"></div>
+
+                <div id="cartDrawer" class="cart-drawer">
+                    <div class="cart-header">
+                        <h2>My Shopping Cart</h2>
+                        <span class="close-btn" onclick="closeCart()">
+                            <i class="fa-solid fa-xmark"></i>
+                        </span>
+                    </div>
+
+                    <div class="cart-body" id="cartItems">
+                        <div class="empty-cart">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <p>Your cart is empty</p>
+                        </div>
+                    </div>
+
+                    <div class="cart-footer">
+                        <div class="subtotal">
+                            <span>Subtotal:</span>
+                            <strong id="subtotal">₹0.00</strong>
+                        </div>
+                        <button class="checkout-btn">Checkout</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="head2">
+        <div class="num">
+            <i class="fa-solid fa-headset"></i>
+            <p>(220) 123 456 7890</p>
+        </div>
+        <nav class="manu">
+            <ul>
+                <li class="dropdown">
+                    <a href="jelwo.html">HOME</a>
+                </li>
+                <li class="dropdown">
+                    <a href="collection.html">SHOP</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#">PRODUCT</a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Home One </a></li>
+                        <li><a href="#">Home Two</a></li>
+                        <li><a href="#">Homw Three</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">BLOG</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#">PAGES</a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#">About us </a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Faq's</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Refund policy</a></li>
+                        <li><a href="#">Store location</a></li>
+                        <li><a href="#">Shipping & return</a></li>
+                        <li><a href="#">Terms & condition</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div style="display: contents;">
+            <i class="fa-solid fa-house"></i>
+            <p>FREE TRY AT HOME</p>
+        </div>
+    </section>
+
+    <section class="f-img">
+
+        <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-3-breadcrumb.jpg?v=1742473987&width=1920" alt="">
+        <p>Home-Collection</p>
+        <h2>Collections</h2>
+    </section>
+
+    <section class="collection">
+
+        <div class="product-card">
+            <span class="count">12</span>
+            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-6.jpg?v=1742442751&width=832" alt="">
+            <h3>14K, 58.3%</h3>
+        </div>
+
+        <div class="product-card">
+            <span class="count">12</span>
+            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-46.jpg?v=1742445430&width=832" alt="">
+            <h3>18K, 75.0%</h3>
+        </div>
+
+        <div class="product-card">
+            <span class="count">12</span>
+            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-6.jpg?v=1742442751&width=832" alt="">
+            <h3>22K, 91.7%</h3>
+        </div>
+
+        <div class="product-card">
+            <span class="count">12</span>
+            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-6.jpg?v=1742442751&width=832" alt="">
+            <h3>24K, 99.9%</h3>
+        </div>
+        <div class="product-card">
+            <span class="count">12</span>
+            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-6.jpg?v=1742442751&width=832" alt="">
+            <h3>BANGLES</h3>
+        </div>
+        <div class="product-card card-1">
+            <span class="count">12</span>
+            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-pro-36.jpg?v=1741666478&width=832" alt="">
+            <h3>BEST SELLER</h3>
+        </div>
+        <div class="product-card">
+            <span class="count">12</span>
+            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-6.jpg?v=1742442751&width=832" alt="">
+            <h3>BRACELETS</h3>
+        </div>
+        <div class="product-card">
+            <span class="count">12</span>
+            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-6.jpg?v=1742442751&width=832" alt="">
+            <h3>BROOCH</h3>
+        </div>
+        <div class="product-card">
+            <span class="count">12</span>
+            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-6.jpg?v=1742442751&width=832" alt="">
+            <h3>CHAIN</h3>
+        </div>
+        <div class="product-card">
+            <span class="count">10</span>
+            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-56.jpg?v=1742445682&width=832" alt="">
+            <h3>DIAMOND</h3>
+        </div>
+        <div class="product-card card-1">
+            <span class="count">10</span>
+            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-pro-21.jpg?v=1741607520&width=832" alt="">
+            <h3>DIAMONDS</h3>
+        </div>
+        <div class="product-card">
+            <span class="count">12</span>
+            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-56.jpg?v=1742445682&width=832" alt="">
+            <h3>EARRING</h3>
+        </div>
+        <div class="product-card">
+            <span class="count">12</span>
+            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-56.jpg?v=1742445682&width=832" alt="">
+            <h3>EARRINGS</h3>
+        </div>
+        <div class="product-card card-1">
+            <span class="count">10</span>
+            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-pro-56.jpg?v=1741670785&width=832" alt="">
+            <h3>GOLD</h3>
+        </div>
+        <div class="product-card">
+            <span class="count">12</span>
+            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-6.jpg?v=1742442751&width=832" alt="">
+            <h3>JEWELRY</h3>
+        </div>
+        <div class="product-card card-1">
+            <span class="count">8</span>
+            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-pro-36.jpg?v=1741666478&width=832" alt="">
+            <h3>MEENAKARI</h3>
+        </div>
+        <div class="product-card">
+            <span class="count">12</span>
+            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-6.jpg?v=1742442751&width=832" alt="">
+            <h3>NECKLACE</h3>
+        </div>
+        <div class="product-card card-1">
+            <span class="count">8</span>
+            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-pro-36.jpg?v=1741666478&width=832" alt="">
+            <h3>NECKLACE</h3>
+        </div>
+        <div class="product-card">
+            <span class="count">12</span>
+            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-56.jpg?v=1742445682&width=832" alt="">
+            <h3>NECKLACES</h3>
+        </div>
+        <div class="product-card card-1">
+            <span class="count">12</span>
+            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-pro-36.jpg?v=1741666478&width=832" alt="">
+            <h3>NEW PRODUCT</h3>
+        </div>
+        <div class="product-card">
+            <span class="count">12</span>
+            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-16.jpg?v=1742443575&width=832" alt="">
+            <h3>NOSE PINS</h3>
+            <a href="#"
+                onclick="addToCart('Sherbi ring',26,'//jelwo.myshopify.com/cdn/shop/files/jewelry-pro-1.jpg?v=1741601512&width=533'); return false;">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+            <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="product-card card-1">
+            <span class="count">12</span>
+            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-pro-36.jpg?v=1741666478&width=832" alt="">
+            <h3>PENDANT</h3>
+        </div>
+        <div class="product-card">
+            <span class="count">8 </span>
+            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-56.jpg?v=1742445682&width=832" alt="">
+            <h3>PENDANTS</h3>
+        </div>
+        <div class="product-card">
+            <span class="count">12</span>
+            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-6.jpg?v=1742442751&width=832" alt="">
+            <h3>PLATINUM RING</h3>
+        </div>
+        <div class="product-card card-1">
+            <span class="count">12</span>
+            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-pro-21.jpg?v=1741607520&width=832" alt="">
+            <h3>RINGS</h3>
+        </div>
+        <div class="product-card">
+            <span class="count">12</span>
+            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-6.jpg?v=1742442751&width=832" alt="">
+            <h3>ROSE GOLD</h3>
+        </div>
+        <div class="product-card card-1">
+            <span class="count">12</span>
+            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-pro-36.jpg?v=1741666478&width=832" alt="">
+            <h3>TRENDING PRODUCT</h3>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-top">
+
+            <div class="footer-col contact-info">
+                <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-logo.png?v=1744805986&width=352" alt=""
+                    class="logo">
+
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>55 East 10th street, new york, ny 10003, united states</p>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+ (220) 123 456 7890</p>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p>demo123546@gmail.com</p>
+                </div>
+            </div>
+
+            <!-- Information -->
+            <div class="footer-col">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Faq's</a></li>
+                    <li><a href="#">News</a></li>
+                </ul>
+            </div>
+
+            <!-- Privacy -->
+            <div class="footer-col">
+                <h3>Privacy & terms</h3>
+                <ul>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Refund policy</a></li>
+                    <li><a href="#">Shipping & return</a></li>
+                    <li><a href="#">Terms & condition</a></li>
+                </ul>
+            </div>
+
+            <!-- Category -->
+            <div class="footer-col">
+                <h3>Category</h3>
+                <ul>
+                    <li><a href="#">Rings</a></li>
+                    <li><a href="#">Earring</a></li>
+                    <li><a href="#">Pendant</a></li>
+                    <li><a href="#">Necklaces</a></li>
+                    <li><a href="#">Bracelets</a></li>
+                </ul>
+            </div>
+
+            <!-- Store -->
+            <div class="footer-col">
+                <h3>Visit store</h3>
+                <ul>
+                    <li>Mon - sat : 10am - 11pm</li>
+                    <li>Sun : 10am - 4pm</li>
+                    <li>7 Days a week</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Social Icons -->
+        <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <div class="newsletter">
+            <h3>Subscribe and get 15% discount.</h3>
+
+            <form>
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+        </div>
+
+
+    </footer>
+
+    <section>
+        <div class="footer-bottam">
+            <p>
+                Copyright © 2026 by spacingtech
+            </p>
+            <div class="payment-methods">
+                <div class="payment-box"><i class="fa-brands fa-cc-visa"></i></div>
+                <div class="payment-box"><i class="fa-brands fa-cc-mastercard"></i></div>
+                <div class="payment-box"><i class="fa-brands fa-cc-amex"></i></div>
+                <div class="payment-box"><i class="fa-brands fa-cc-paypal"></i></div>
+                <div class="payment-box"><i class="fa-brands fa-cc-diners-club"></i></div>
+                <div class="payment-box"><i class="fa-brands fa-cc-discover"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="jelwo.js"></script>
+</body>
+
+</html>

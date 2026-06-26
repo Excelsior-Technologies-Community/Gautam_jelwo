@@ -1,0 +1,102 @@
+    .f-img {
+        padding: 40px 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-color: #f3f2ee;
+        position: relative;
+    }
+
+    .f-img img {
+        display: block;
+        max-width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: 0;
+    }
+
+    .f-img p {
+        position: relative;
+        z-index: 1;
+        color: #f3f2ee;
+        font-size: 25px;
+        text-align: center;
+        margin-block-end: 0;
+    }
+
+    .f-img h2 {
+        position: relative;
+        z-index: 1;
+        color: #f3f2ee;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        font-size: 40px;
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+
+    .collection {
+        max-width: 1800px;
+        margin: 60px auto;
+        padding: 0 30px;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 47px;
+    }
+
+    .product-card {
+        background: #f3f3f3;
+        padding: 25px;
+        text-align: center;
+        position: relative;
+        transition: .4s;
+        height: 259px;
+        margin-top: 20px;
+    }
+
+    .card-1 {
+        background: white;
+        padding: 25px;
+        text-align: center;
+        position: relative;
+        transition: .4s;
+        height: 259px;
+        margin-top: 20px;
+    }
+
+    .count {
+        position: absolute;
+        top: 11px;
+        left: 11px;
+        width: 50px;
+        height: 50px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .product-card img {
+        width: 100%;
+        height: 216px;
+        object-fit: contain;
+        margin-top: 0;
+    }
+
+    .product-card h3 {
+        margin-top: 24px;
+        font-size: 16px;
+        color: #222;
+        font-weight: 600;
+    }
+
+    .product-card:hover {
+        transform: translateY(-8px);
+    }
