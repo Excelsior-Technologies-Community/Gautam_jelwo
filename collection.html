@@ -122,7 +122,9 @@
 
 
     <section class="container">
+
         <div class="content">
+
             <div class="right-sec">
                 <div class="img-sec">
                     <h1>Products</h1>
@@ -134,7 +136,7 @@
 
                 <div class="collection">
 
-                    <div class="product-card" data-category="14K">
+                    <div class="product-card" data-category="14K,18K,22K,24K,BANGLES">
                         <span class="discount">25%</span>
 
                         <div class="product-image">
@@ -167,7 +169,7 @@
                         </div>
                     </div>
 
-                    <div class="product-card" data-category="18K">
+                    <div class="product-card" data-category="14K,18K,22K,24K,BANGLES">
                         <span class="discount">45%</span>
 
                         <div class="product-image">
@@ -200,7 +202,7 @@
                         </div>
                     </div>
 
-                    <div class="product-card" data-category="22K">
+                    <div class="product-card" data-category="14K,22K,24K,EARRINGS">
                         <span class="discount">64%</span>
 
                         <div class="product-image">
@@ -233,7 +235,7 @@
                         </div>
                     </div>
 
-                    <div class="product-card" data-category="24K">
+                    <div class="product-card" data-category="14K,22K,24K,EARRINGS">
                         <span class="discount">68%</span>
 
                         <div class="product-image">
@@ -266,7 +268,7 @@
                         </div>
                     </div>
 
-                    <div class="product-card" data-category="BANGLES">
+                    <div class="product-card" data-category="14K,22K,24K,BRACELETS">
                         <span class="discount">56%</span>
 
                         <div class="product-image">
@@ -299,7 +301,7 @@
                         </div>
                     </div>
 
-                    <div class="product-card" data-category="BEST SELLER">
+                    <div class="product-card" data-category="BEST SELLER,14K,18K,22K,RINGS">
 
                         <div class="product-image">
                             <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-36.jpg?v=1742444776&width=352"
@@ -330,7 +332,7 @@
                         </div>
                     </div>
 
-                    <div class="product-card" data-category="BRACELETS">
+                    <div class="product-card" data-category="14K,22K,24K,BANGLES,BRACELETS">
 
                         <div class="product-image">
                             <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-31.jpg?v=1742444512&width=352"
@@ -392,7 +394,7 @@
                         </div>
                     </div>
 
-                    <div class="product-card" data-category="CHAIN">
+                    <div class="product-card" data-category="14K,22K,24K,CHAIN">
                         <span class="discount">13%</span>
                         <div class="product-image">
                             <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-1.jpg?v=1742443985&width=352"
@@ -424,7 +426,7 @@
                         </div>
                     </div>
 
-                    <div class="product-card" data-category="NEW PRODUCT">
+                    <div class="product-card" data-category="NEW PRODUCT,14K,22K,24K,NOSE PIN">
 
                         <div class="product-image">
                             <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-21.jpg?v=1742443763&width=352"
@@ -455,7 +457,7 @@
                         </div>
                     </div>
 
-                    <div class="product-card" data-category="PENDANT">
+                    <div class="product-card" data-category="14K,22K,24K,BANGLES,PENDANT">
                         <span class="discount">20%</span>
                         <div class="product-image">
                             <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-16.jpg?v=1742443575&width=352"
@@ -488,7 +490,7 @@
                         </div>
                     </div>
 
-                    <div class="product-card" data-category="TRENDING PRODUCT">
+                    <div class="product-card" data-category="TRENDING PRODUCT,14K,22K,PENDANT">
 
                         <div class="product-image">
                             <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-11.jpg?v=1742443330&width=352"
@@ -580,36 +582,6 @@
                         <span>(12)</span>
                     </label>
                     <label>
-                        <input type="checkbox" value="DIAMONDS" onchange="filterProducts()">
-                        DIAMONDS
-                        <span>(12)</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" value="EARRING" onchange="filterProducts()">
-                        EARRING
-                        <span>(12)</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" value="GOLD" onchange="filterProducts()">
-                        GOLD
-                        <span>(12)</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" value="JEWELRY" onchange="filterProducts()">
-                        JEWELRY
-                        <span>(12)</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" value="MEENAKARI" onchange="filterProducts()">
-                        MEENAKARI
-                        <span>(12)</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" value="NECKLACE" onchange="filterProducts()">
-                        NECKLACE
-                        <span>(12)</span>
-                    </label>
-                    <label>
                         <input type="checkbox" value="NEW PRODUCT" onchange="filterProducts()">
                         NEW PRODUCT
                         <span>(12)</span>
@@ -629,16 +601,19 @@
 
 
                 <div class="filterbar">
+                    <div style="display: flex;">
+                        <h2>Availability</h2>
+                        <a href="collection.html" style="position: relative; top: 39px; left: 35px;"> Reset</a>
+                    </div>
 
-                    <h2>Availability</h2>
                     <label>
-                        <input type="checkbox" onchange="filterProducts()">
+                        <input type="checkbox" value="14K" onchange="filterProducts()">
                         In stock
                         <span>(12)</span>
                     </label>
 
                     <label>
-                        <input type="checkbox" value="18K" onchange="filterProducts()">
+                        <input type="checkbox" value="BROOCH" onchange="filterProducts() ">
                         out of stock
                         <span>(1)</span>
                     </label>
@@ -648,6 +623,7 @@
                     alt="" style="display: block; overflow: hidden; position: relative; width: 100%;">
 
             </div>
+
         </div>
         </div>
     </section>
@@ -764,21 +740,25 @@
 
 </html>
 
+
+
 <script>
     function filterProducts() {
 
-        let checked = document.querySelectorAll('.filterbar input:checked');
-        let selected = [...checked].map(item => item.value);
+        const checked = document.querySelectorAll(".filterbar input:checked");
+        const selected = [...checked].map(item => item.value.toUpperCase());
 
-        let products = document.querySelectorAll('.product-card');
+        const products = document.querySelectorAll(".product-card");
 
         products.forEach(product => {
 
-            let category = product.dataset.category;
+            const categories = product.dataset.category
+                .split(",")
+                .map(cat => cat.trim().toUpperCase());
 
             if (
                 selected.length === 0 ||
-                selected.includes(category)
+                selected.some(cat => categories.includes(cat))
             ) {
                 product.style.display = "";
             } else {
@@ -786,7 +766,6 @@
             }
 
         });
+
     }
-
-
 </script>

@@ -60,7 +60,9 @@ span.offer1 {
     gap: 20px;
 }
 
-.icon-item {
+.icon-item1,
+.icon-item2,
+.icon-item3 {
     display: flex;
     align-items: center;
     gap: 6px;
@@ -105,6 +107,10 @@ nav {
     font-size: 16px;
     font-weight: 400;
     padding: 5px 10px;
+}
+
+.home {
+    display: contents;
 }
 
 nav li {

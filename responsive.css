@@ -1,0 +1,405 @@
+@media (max-width:1024px) {
+    .header-area img {
+        width: 144px;
+        position: relative;
+        left: 450px;
+    }
+
+    .search-box {
+        display: none;
+    }
+
+    .offer1 {
+        display: none;
+    }
+
+    .manu {
+        display: none;
+    }
+
+    .header-area {
+        gap: 150px;
+        justify-content: space-between
+    }
+
+    nav {
+        display: none;
+    }
+
+    .icon-wrapper {
+        position: relative;
+        right: 21px;
+    }
+
+    .num {
+        display: ruby;
+        position: relative;
+        left: 19px;
+    }
+
+    .home {
+        display: ruby;
+        position: relative;
+        right: 19px;
+    }
+
+    .center-logo {
+        position: relative;
+        top: 41px;
+        left: -14px;
+    }
+
+    .slide-content h1 {
+        font-size: 46px;
+        width: 393px;
+        position: relative;
+        left: 36px;
+        top: 13px;
+    }
+
+    .shop-btn {
+        padding: 14px 34px;
+        font-size: 13px;
+    }
+
+    .video-sec {
+        gap: 15px;
+    }
+
+    .video-img1 img {
+        width: 700px;
+    }
+
+    .img1-txt h2 {
+        font-size: 36px;
+    }
+
+    .img1-txt p {
+        font-size: 17px;
+    }
+
+    .video-img2 img {
+        width: 320px;
+    }
+
+    .footer-bottam {
+        gap: 440px;
+        padding: 0 20px;
+    }
+
+    .newsletter h3 {
+        font-size: 15px;
+    }
+
+    .payment-box {
+        width: 30px;
+    }
+}
+
+@media (max-width:768px) {
+
+    .header-area img {
+        left: 285px;
+    }
+
+    .num {
+        width: 25%;
+    }
+
+    .banner {
+        display: block;
+    }
+
+    .banner li {
+        width: 680.333px;
+    }
+
+    .main-offer .main-t {
+        width: 80%;
+    }
+
+    .mySwiper1 .swiper-slide img {
+        height: 300px;
+    }
+
+    .video-img1 img {
+        width: 770px;
+    }
+
+    .img1-txt {
+        width: 40%;
+    }
+
+    .img1-txt p {
+        font-size: 20px;
+    }
+
+    .video-img2 img {
+        width: 719px;
+        position: relative;
+        left: 50px;
+    }
+
+    .video-btn span {
+        left: 384px;
+    }
+
+    .section-title h2 {
+        font-size: 40px;
+    }
+
+    .footer-top {
+        grid-template-columns: 1.5fr 1fr 1fr;
+    }
+
+    .newsletter {
+        gap: 0;
+    }
+
+    .footer-bottam {
+        gap: 197px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .header-area {
+        gap: 0;
+    }
+
+    .header-area img {
+        left: 0;
+        position: static;
+    }
+
+    .swiper-slide .main-img {
+        height: 320px;
+    }
+
+    .slide-content h1 {
+        font-size: 40px;
+        width: 305px;
+        left: 86px;
+    }
+
+    .num {
+        width: 100%;
+        text-align: center;
+        left: 0;
+    }
+
+    .home {
+        display: none;
+    }
+
+    .banner {
+        display: block;
+    }
+
+    .banner li {
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+
+    .banner-txt1 h2 {
+        font-size: 20px;
+    }
+
+    .banner-txt2 h2 {
+        font-size: 20px;
+    }
+
+    .main-offer .main-t {
+        width: 100%;
+    }
+
+    .mySwiper1 .swiper-slide img {
+        height: 281px;
+    }
+
+    .service-area ul li {
+        width: 100%;
+    }
+
+    .ser-block {
+        border: 1px solid #2222221a;
+    }
+
+    .ser-block a {
+        border-right: 0;
+    }
+
+    .video-sec {
+        padding: 0 10px 0 40px;
+        gap: 15px;
+    }
+
+    .video-img1 img {
+        padding-left: 0;
+    }
+
+    .video-img1 img {
+        width: 100%;
+    }
+
+    .img1-txt {
+        left: 140px;
+    }
+
+    .img1-txt p {
+        font-size: 13px;
+    }
+
+    .video-img2 img {
+        width: 100%;
+        position: static;
+        left: 0;
+    }
+
+    .video-btn span {
+        left: 165px
+    }
+
+    .section-title h2 {
+        font-size: 22px;
+    }
+
+    .reel-content {
+        top: 185px;
+    }
+
+    .footer-col {
+        text-align: start;
+    }
+
+
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-social a {
+        width: 50px;
+        height: 50px;
+    }
+
+    .newsletter {
+        gap: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .newsletter form {
+        display: block;
+    }
+
+    .newsletter button {
+        margin-top: 10px;
+    }
+
+    .footer-bottam {
+        gap: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .header-area {
+        gap: 80px;
+    }
+
+    .main-offer .main-t {
+        width: 80%;
+    }
+
+    .icon-item1 {
+        display: none;
+    }
+
+    .shop-btn {
+        font-size: 11px;
+    }
+
+    .banner-txt2 {
+        left: 26px;
+    }
+
+    .mySwiper1 .swiper-slide img {
+        height: 464px
+    }
+
+    .img1-txt {
+        left: 127px;
+    }
+
+    .img1-txt h2 {
+        font-size: 30px;
+    }
+
+    .reel-content {
+        top: 157px;
+    }
+
+    .video-img1 img {
+        height: 300px;
+    }
+
+    .video-img2 img {
+        height: 300px;
+    }
+
+    .video-btn span {
+        left: 130px;
+        bottom: 133px;
+    }
+
+    .double-qut {
+        font-size: 50px;
+    }
+
+    .reel-btn {
+        width: 100%;
+        left: 0;
+        top: -54px;
+    }
+
+    .newsletter input {
+        width: 330px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .header-area {
+        gap: 29px;
+    }
+
+    .img1-txt {
+        left: 99px;
+    }
+
+    .img1-txt h2 {
+        font-size: 20px;
+    }
+
+    .shop-btn {
+        font-size: 10px;
+    }
+
+    .newsletter input {
+        width: 260px;
+    }
+
+    .reel-content {
+        top: 390px;
+        left: 50px;
+    }
+
+    .reel-btn {
+        width: 75%;
+        top: -69px;
+        left: 31px;
+    }
+}
