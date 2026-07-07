@@ -8,12 +8,35 @@
     <link rel="stylesheet" href="jelwo.css">
     <link rel="stylesheet" href="collection.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
 
     <header>
         <div class="header-area">
+            <button class="menu-btn">&#9776;</button>
+
+            <div class="menu-overlay"></div>
+
+            <div class="sidebar">
+
+                <div class="sidebar-header">
+                    <h3>MENU</h3>
+                    <button class="close-btn">&times;</button>
+                </div>
+
+                <ul class="menu">
+
+                    <li><a href="jelwo.html">Home</a></li>
+                    <li><a href="collection.html">Shop</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+
+            </div>
             <div>
                 <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-logo.png?v=1744805986&width=352" alt="">
             </div>
@@ -28,16 +51,16 @@
                 </button>
             </div>
             <div class="icon-wrapper">
-                <a href="#" class="icon-item">
+                <a href="#" class="icon-item1">
                     <i class="fa-regular fa-user"></i>
                 </a>
 
-                <a href="wishlist.html" class="icon-item">
+                <a href="wishlist.html" class="icon-item2">
                     <i class="fa-regular fa-heart"></i>
                     <span id="wishlistCount">(0)</span>
                 </a>
 
-                <a href="#" class="icon-item" onclick="openCart(); return false;">
+                <a href="#" class="icon-item3" onclick="openCart(); return false;">
                     <i class="fa-solid fa-bag-shopping"></i>
                     <span id="cartCount">(0)</span>
                 </a>
@@ -107,7 +130,7 @@
                 </li>
             </ul>
         </nav>
-        <div style="display: contents;">
+        <div class="home">
             <i class="fa-solid fa-house"></i>
             <p>FREE TRY AT HOME</p>
         </div>
@@ -525,107 +548,113 @@
             </div>
 
             <div class="left-sec">
-                <h2>Categories</h2>
-
-                <div class="filterbar">
-
-
-                    <label>
-                        <input type="checkbox" value="14K" onchange="filterProducts()">
-                        14K, 58.3%
-                        <span>(12)</span>
-                    </label>
-
-                    <label>
-                        <input type="checkbox" value="18K" onchange="filterProducts()">
-                        18K, 75.0%
-                        <span>(12)</span>
-                    </label>
-
-                    <label>
-                        <input type="checkbox" value="22K" onchange="filterProducts()">
-                        22K, 91.7%
-                        <span>(12)</span>
-                    </label>
-
-                    <label>
-                        <input type="checkbox" value="24K" onchange="filterProducts()">
-                        24K, 99.9%
-                        <span>(12)</span>
-                    </label>
-
-                    <label>
-                        <input type="checkbox" value="BANGLES" onchange="filterProducts()">
-                        Bangles
-                        <span>(12)</span>
-                    </label>
-
-                    <label>
-                        <input type="checkbox" value="BEST SELLER" onchange="filterProducts()">
-                        Best Seller
-                        <span>(12)</span>
-                    </label>
-
-                    <label>
-                        <input type="checkbox" value="BRACELETS" onchange="filterProducts()">
-                        Bracelets
-                        <span>(12)</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" value="BROOCH" onchange="filterProducts()">
-                        BROOCH
-                        <span>(12)</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" value="CHAIN" onchange="filterProducts()">
-                        CHAIN
-                        <span>(12)</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" value="NEW PRODUCT" onchange="filterProducts()">
-                        NEW PRODUCT
-                        <span>(12)</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" value="PENDANT" onchange="filterProducts()">
-                        PENDANT
-                        <span>(12)</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" value="TRENDING PRODUCT" onchange="filterProducts()">
-                        TRENDING PRODUCT
-                        <span>(12)</span>
-                    </label>
-
-                </div>
-
-
-                <div class="filterbar">
-                    <div style="display: flex;">
-                        <h2>Availability</h2>
-                        <a href="collection.html" style="position: relative; top: 39px; left: 35px;"> Reset</a>
+                <div class="filter-section active">
+                    <div class="filter-title">
+                        <h3>Categories</h3>
+                        <i class="fa-solid fa-angle-down"></i>
                     </div>
 
-                    <label>
-                        <input type="checkbox" value="14K" onchange="filterProducts()">
-                        In stock
-                        <span>(12)</span>
-                    </label>
+                    <div class="filterbar">
 
-                    <label>
-                        <input type="checkbox" value="BROOCH" onchange="filterProducts() ">
-                        out of stock
-                        <span>(1)</span>
-                    </label>
+
+                        <label>
+                            <input type="checkbox" value="14K" onchange="filterProducts()">
+                            14K, 58.3%
+                            <span>(12)</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox" value="18K" onchange="filterProducts()">
+                            18K, 75.0%
+                            <span>(12)</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox" value="22K" onchange="filterProducts()">
+                            22K, 91.7%
+                            <span>(12)</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox" value="24K" onchange="filterProducts()">
+                            24K, 99.9%
+                            <span>(12)</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox" value="BANGLES" onchange="filterProducts()">
+                            Bangles
+                            <span>(12)</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox" value="BEST SELLER" onchange="filterProducts()">
+                            Best Seller
+                            <span>(12)</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox" value="BRACELETS" onchange="filterProducts()">
+                            Bracelets
+                            <span>(12)</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" value="BROOCH" onchange="filterProducts()">
+                            BROOCH
+                            <span>(12)</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" value="CHAIN" onchange="filterProducts()">
+                            CHAIN
+                            <span>(12)</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" value="NEW PRODUCT" onchange="filterProducts()">
+                            NEW PRODUCT
+                            <span>(12)</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" value="PENDANT" onchange="filterProducts()">
+                            PENDANT
+                            <span>(12)</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" value="TRENDING PRODUCT" onchange="filterProducts()">
+                            TRENDING PRODUCT
+                            <span>(12)</span>
+                        </label>
+
+                    </div>
+
+
+                    <div class="filterbar">
+                        <div style="display: flex;">
+                            <h2>Availability</h2>
+                            <a href="collection.html" style="position: relative; top: 39px; left: 35px;"> Reset</a>
+                        </div>
+
+                        <label>
+                            <input type="checkbox" value="14K" onchange="filterProducts()">
+                            In stock
+                            <span>(12)</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox" value="BROOCH" onchange="filterProducts() ">
+                            out of stock
+                            <span>(1)</span>
+                        </label>
+                    </div>
+
+                    <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-collection-side-banner.jpg?v=1742637512&width=352"
+                        alt="" style="display: block; overflow: hidden; position: relative; width: 100%;">
+
                 </div>
 
-                <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-collection-side-banner.jpg?v=1742637512&width=352"
-                    alt="" style="display: block; overflow: hidden; position: relative; width: 100%;">
-
             </div>
-
         </div>
         </div>
+        
     </section>
 
     <footer class="footer">
@@ -768,4 +797,22 @@
         });
 
     }
+
+    document.querySelectorAll(".filter-title").forEach(title => {
+
+        title.addEventListener("click", function () {
+
+            const filter = this.nextElementSibling;
+
+            if (filter.style.display === "none") {
+                filter.style.display = "block";
+            } else {
+                filter.style.display = "none";
+            }
+
+            this.querySelector("i").classList.toggle("rotate");
+
+        });
+
+    });
 </script>

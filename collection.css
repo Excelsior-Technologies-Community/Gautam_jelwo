@@ -86,8 +86,11 @@
         width: 25%;
         padding: 0 15px;
         margin-top: 30px;
-    }
 
+        position: sticky;
+        top: 20px;
+        height: fit-content;
+    }
 
     .filterbar {
         height: 450px;
@@ -134,4 +137,58 @@
         position: relative;
         left: 10px;
         top: 29px;
+    }
+
+    .filterbar {
+        border: 1px solid #e5e5e5;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+        background: #fff;
+
+        max-height: 350px;
+        overflow-y: auto;
+    }
+
+    .filterbar::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .filterbar::-webkit-scrollbar-thumb {
+        background: #bdbdbd;
+        border-radius: 20px;
+    }
+
+    .filter-section {
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 20px;
+    }
+
+    .filter-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        padding: 15px 0;
+    }
+
+    .filter-title h3 {
+        margin: 0;
+        font-size: 22px;
+    }
+
+    .filter-title i {
+        transition: .3s;
+    }
+
+    .filter-section.active i {
+        transform: rotate(180deg);
+    }
+
+    .filter-section .filterbar {
+        display: none;
+    }
+
+    .filter-section.active .filterbar {
+        display: block;
     }

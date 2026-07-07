@@ -78,13 +78,29 @@ function removeItem(index) {
 
 updateCart();
 
-function updateWishlistCount() {
+const menuBtn = document.querySelector(".menu-btn");
+const closeBtn = document.querySelector(".sidebar .close-btn");
+const sidebar = document.querySelector(".sidebar");
+const menuOverlay = document.querySelector(".menu-overlay");
 
-    const count = document.getElementById("wishlistCount");
+console.log(menuBtn);
+console.log(closeBtn);
+console.log(sidebar);
+console.log(menuOverlay);
 
-    if (count) {
-        count.innerText = `(${wishlist.length})`;
+if (menuBtn && closeBtn && sidebar && menuOverlay) {
+
+    menuBtn.addEventListener("click", () => {
+        sidebar.classList.add("active");
+        menuOverlay.classList.add("active");
+    });
+
+    function closeMenu() {
+        sidebar.classList.remove("active");
+        menuOverlay.classList.remove("active");
     }
-}
 
-updateWishlistCount();
+    closeBtn.addEventListener("click", closeMenu);
+    menuOverlay.addEventListener("click", closeMenu);
+
+}

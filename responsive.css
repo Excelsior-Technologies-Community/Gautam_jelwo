@@ -1,8 +1,6 @@
 @media (max-width:1024px) {
     .header-area img {
         width: 144px;
-        position: relative;
-        left: 450px;
     }
 
     .search-box {
@@ -94,6 +92,19 @@
     .payment-box {
         width: 30px;
     }
+
+    .wishlist-item {
+        display: inline-block;
+    }
+
+    .collection {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .countdown {
+        display: none;
+    }
+
 }
 
 @media (max-width:768px) {
@@ -172,6 +183,10 @@
         position: static;
     }
 
+    .icon-item1 {
+        display: none;
+    }
+
     .swiper-slide .main-img {
         height: 320px;
     }
@@ -236,6 +251,7 @@
 
     .video-img1 img {
         padding-left: 0;
+        height: 370px;
     }
 
     .video-img1 img {
@@ -254,6 +270,7 @@
         width: 100%;
         position: static;
         left: 0;
+        height: 370px;
     }
 
     .video-btn span {
@@ -307,7 +324,7 @@
 
 @media (max-width: 375px) {
     .header-area {
-        gap: 80px;
+        gap: 34px;
     }
 
     .main-offer .main-t {
@@ -316,6 +333,10 @@
 
     .icon-item1 {
         display: none;
+    }
+
+    .icon-wrapper {
+        gap: 5px;
     }
 
     .shop-btn {
@@ -368,12 +389,20 @@
     .newsletter input {
         width: 330px;
     }
+
+    .cart-drawer {
+        width: 375px
+    }
 }
 
 @media (max-width: 320px) {
 
     .header-area {
         gap: 29px;
+    }
+
+    .icon-item2 {
+        display: none;
     }
 
     .img1-txt {
@@ -385,7 +414,7 @@
     }
 
     .shop-btn {
-        font-size: 10px;
+        font-size: 7px;
     }
 
     .newsletter input {
@@ -401,5 +430,9 @@
         width: 75%;
         top: -69px;
         left: 31px;
+    }
+
+    .cart-drawer {
+        width: 320px;
     }
 }
