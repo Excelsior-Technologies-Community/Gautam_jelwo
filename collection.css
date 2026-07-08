@@ -192,3 +192,205 @@
     .filter-section.active .filterbar {
         display: block;
     }
+
+    .products-toolbar {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 0;
+        border-bottom: 1px solid #e5e5e5;
+        margin-bottom: 25px;
+        flex-wrap: wrap;
+    }
+
+    /* Filter button — matches screenshot's plain text+icon style */
+    .filter-toggle-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 15px;
+        color: #333;
+        padding: 0;
+    }
+
+    .filter-toggle-btn i {
+        color: #333;
+    }
+
+    .toolbar-divider {
+        width: 1px;
+        height: 20px;
+        background: #ddd;
+    }
+
+    .view-switch {
+        display: flex;
+        gap: 6px;
+    }
+
+    .view-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        color: #c9a35d;
+        padding: 4px;
+        opacity: 0.5;
+    }
+
+    .view-btn.active {
+        opacity: 1;
+    }
+
+    .product-count {
+        margin-left: auto;
+        font-size: 15px;
+        color: #333;
+    }
+
+    .sort-by {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 15px;
+    }
+
+    .sort-by label {
+        font-weight: 700;
+        color: #111;
+    }
+
+    .sort-by select {
+        border: none;
+        background: transparent;
+        color: #888;
+        font-size: 15px;
+        cursor: pointer;
+        outline: none;
+    }
+
+    /* List view layout for products */
+    .collection.list-view {
+        grid-template-columns: 1fr;
+    }
+
+    .collection.list-view .product-card {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .collection.list-view .product-image {
+        width: 200px;
+        flex-shrink: 0;
+    }
+
+    @media (max-width: 600px) {
+        .products-toolbar {
+            justify-content: flex-start;
+        }
+
+        .product-count {
+            margin-left: 0;
+            order: 3;
+            width: 100%;
+        }
+
+        .sort-by {
+            margin-left: auto;
+        }
+    }
+
+    @media (max-width:1024px) {
+        .countdown {
+            display: none;
+        }
+
+    }
+
+    .filter-toggle-btn {
+        display: none;
+    }
+
+    .filter-close-btn {
+        display: none;
+    }
+
+    .filter-overlay {
+        display: none;
+    }
+
+    @media (max-width: 1024px) {
+        .content {
+            flex-direction: column;
+        }
+
+        .right-sec,
+        .left-sec {
+            width: 100%;
+        }
+
+        .filter-toggle-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 22px;
+            color: black;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        .left-sec {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 320px;
+            max-width: 85%;
+            height: 100vh;
+            margin-top: 0;
+            background: #fff;
+            z-index: 1001;
+            padding: 25px 20px;
+            overflow-y: auto;
+            transition: left 0.3s ease;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .left-sec.active {
+            left: 0;
+        }
+
+        .filter-close-btn {
+            display: block;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 26px;
+            line-height: 1;
+            cursor: pointer;
+            color: #333;
+        }
+
+        .filter-overlay.active {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+
+        .countdown {
+            display: none;
+        }
+    }

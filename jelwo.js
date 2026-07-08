@@ -104,3 +104,15 @@ if (menuBtn && closeBtn && sidebar && menuOverlay) {
     menuOverlay.addEventListener("click", closeMenu);
 
 }
+
+function openFilter() {
+    document.getElementById('filterSidebar').classList.add('active');
+    document.getElementById('filterOverlay').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeFilter() {
+    document.getElementById('filterSidebar').classList.remove('active');
+    document.getElementById('filterOverlay').classList.remove('active');
+    document.body.style.overflow = '';
+}
