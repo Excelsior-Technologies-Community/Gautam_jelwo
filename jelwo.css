@@ -509,18 +509,19 @@ a {
 }
 
 .product-info h3 {
-    font-size: 15px;
+    font-size: 13px;
     margin-bottom: 15px;
     color: #222;
 }
 
 .product-info i {
     color: #a77f66;
+    font-weight: 600;
 }
 
 .price {
     color: #b48a68;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 600;
 }
 
@@ -533,7 +534,10 @@ a {
     color: #b48a68;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 20px;
+}
+
+.c-cart {
     border-bottom: 1px solid #b18261;
 }
 

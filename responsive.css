@@ -173,6 +173,10 @@
     .collection {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .countdown {
+        display: none;
+    }
 }
 
 @media (max-width: 425px) {
@@ -416,8 +420,10 @@
         gap: 29px;
     }
 
-    .icon-item2 {
-        display: none;
+    .icon-item1,
+    .icon-item2,
+    .icon-item3 {
+        font-size: 15px;
     }
 
     .img1-txt {
